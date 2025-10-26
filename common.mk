@@ -237,6 +237,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.crda.sh \
+    init.mdm.sh \
     init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
@@ -343,6 +344,11 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    librilutils \
+    vendor.samsung.hardware.radio@2.1.vendor \
     secril_config_svc \
     sehradiomanager
 
